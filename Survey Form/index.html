@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Survey Form</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="container">
+
+        <header>
+            <h1 id="title"><strong>NemesisArtschool</strong> Survey Form</h1>
+            <p id="description">Thank you for taking the time to fill out this form, this form will really help to
+                improve
+                our
+                platform in the
+                future </p>
+        </header>
+
+
+        <form id="survey-form">
+            <!-- Name -->
+            <div class="form-group">
+                <label id="name-label" for="name">Name</label>
+                <input type="text" id="name" name="name" class="form-control" placeholder="Enter your name" required>
+            </div>
+            <!-- Email -->
+            <div class="form-group">
+                <label id="email-label" for="email">Email</label>
+                <input type="email" id="email" name="email" class="form-control" placeholder="example@email.com"
+                    required>
+            </div>
+            <!-- Age -->
+            <div class="form-group">
+                <label id="number-label" for="number">Age</label>
+                <input type="number" id="number" name="age" min="15" max="99" class="form-control"
+                    placeholder="Enter your age">
+            </div>
+            <!-- Dropdown -->
+            <div class="form-group">
+                <label for="dropdown" id="role-label">What is your current role?</label>
+                <select name="dropdown" id="dropdown" name="role" class="form-control" required>
+                    <option disabled selected value>select current role</option>
+                    <option value="2D Art">Student</option>
+                    <option value="2D Art">Freelance</option>
+                    <option value="3D Art">Full time job</option>
+                    <option value="Storyboard Art">Other</option>
+                </select>
+            </div>
+            <!-- Radio Button -->
+            <div class="form-group">
+                <p>Where do you find information about NemesisArtSchool?</p>
+                <label for="facebook-group">
+                    <input type="radio" id="facebook-group" name="information" value="facebook group"
+                        class="input-radio" checked>
+                    Facebook Group</label>
+                <label for="instagram-post">
+                    <input type="radio" id="instagram-post" name="information" class="input-radio"
+                        value="instagram post">
+                    Instagram Post</label>
+                <label for="from-friend">
+                    <input type="radio" id="from-friend" name="information" class="input-radio" value="from friend">
+                    From Friends</label>
+                <label for="ads">
+                    <input type="radio" id="ads" name="information" class="input-radio" value="ads">
+                    Ads</label>
+            </div>
+            <!-- Checkbox-->
+            <div class="form-group">
+                <p>What would you like to see improved? </p>
+                <label for="2d-art">
+                    <input type="checkbox" id="2d-art" name="2d-art" value="2D Art" class="input-checkbox">
+                    2D Art</label>
+                <label for="3d-art">
+                    <input type="checkbox" id="3d-art" name="3d-art" value="3D Art" class="input-checkbox">
+                    3D Art</label>
+                <label for="graphic-design">
+                    <input type="checkbox" id="graphic-design" name="graphic-design" value="Graphic Design"
+                        class="input-checkbox">
+                    Graphic Design</label>
+
+                <label for="children-book-illustration">
+                    <input type="checkbox" id="children-book-illustration" name="children-book-illustration"
+                        value="Children Book Illustration" class="input-checkbox">
+                    Children Book Illustration</label>
+
+                <label for="game-design">
+                    <input type="checkbox" id="game-design" name="game-design" value="Game Design"
+                        class="input-checkbox">
+                    Game Design</label>
+            </div>
+            <div class="form-group">
+                <label for="suggestion">Any comments or suggestions?
+                </label>
+                <textarea name="suggestion" id="suggestion" placeholder="enter your commend here..."
+                    class="input-textarea"></textarea>
+            </div>
+            <div class="form-group">
+                <button type="submit" id="submit" class="button-submit">Submit</button>
+            </div>
+        </form>
+    </div>
+    <footer> <span>background by <a href="https://www.artstation.com/artwork/D56wQ0" target="_blank">yang
+                chan</a></span>
+    </footer>
+
+</body>
+
+</html>
